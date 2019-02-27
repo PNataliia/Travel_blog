@@ -1,0 +1,146 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Laila', serif;
+    font-family: 'Padauk', sans-serif;
+}
+header{
+height: 80px;
+    width: 100%;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 0;
+    background: black;
+}
+.logo a{
+    margin-top: 2px;
+    position: fixed;
+    float: left;
+    width: 100px;
+    height: auto;
+}
+.menu{
+    float: right;
+}
+nav ul{
+    list-style: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+nav ul li{
+    margin: 5px;
+    display: inline-block;
+    padding: 30px 5px 30px 5px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 23px;
+}
+nav ul li a:hover{
+    color: #0bebf4;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+.first-part{
+    width: 100%;
+    height: 500px;
+}
+.first-part {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.video-background{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+@media (min-aspect-ratio:16/9) {
+.video-background{
+    width: 100%;
+    height: auto;
+}
+}
+@media (max-aspect-ratio:16/9) {
+    .video-background{
+        width: auto;
+        height: 100%;
+    }
+}
+h1{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    margin-bottom: 40px;
+    padding: 20px;
+
+}
+.main-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.second-part{
+    width: 100%;
+    height: 400px;
+    margin: 10px 0px 10px 0px;
+    background: rgba(83, 155, 86, 0.42);
+    padding: 0;
+    border-bottom-style: double;
+    border-color: darkgray;
+}
+.img-me{
+    display: flex;
+    flex-grow: 1;
+    margin: 10px;
+    border-color: black;
+    border-width: 5px;
+    padding: 5px;
+    width: 100%;
+    height: auto;
+}
+.about-me{
+    display: flex;
+    flex-grow: 2;
+    margin: 10px;
+    border-color: black;
+    border-width: 5px;
+    padding: 5px;
+
+}
+
+
+
+
+/*
+.travel{
+    width: 100%;
+    height: 400px;
+    margin: 10px 0px 10px 0px;
+    background: rgba(155, 62, 98, 0.42);
+    padding: 0;
+    border-bottom-style: double;
+    border-color: darkgray;
+}
